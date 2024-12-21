@@ -1,0 +1,111 @@
+/* General Styles (same as before, above mobile adjustments) */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+.hero {
+  position: relative;
+  background-image: url('../img/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+.hero button {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.hero button:hover {
+  background-color: #0056b3;
+}
+.content {
+  padding: 2rem;
+  text-align: center;
+}
+.content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.content p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+.cta {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.cta button {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.cta button:hover {
+  background-color: #218838;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .hero button {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+  .content h2 {
+    font-size: 1.5rem;
+  }
+  .content p {
+    font-size: 0.9rem;
+  }
+  .cta button {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
